@@ -15,7 +15,12 @@ class EmailAddressParser
     end
 
     def parse
-        #binding.pry
         removed_commas.split(" ").uniq
     end
+
+    # Alternative with RegEx
+    # def parse
+    #   self.email_addresses.split(/, | /).uniq
+    # end
+
 end
